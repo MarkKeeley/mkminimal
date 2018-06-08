@@ -1,15 +1,16 @@
 {{ partial "header.html" . }}
         {{ range first 10 .Data.Pages }}
-            <article style="background: lightgray;">
-                <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1>
-                {{ .Summary }}
-            </article><br>
+            {{ if eq .Type "post"}}
+                <article style="background: #f2e9fb; border-radius: 15px; padding: 5px;">
+                    <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1>
+                    {{ .Summary }}
+                    {{ if .Truncated }}
+                        <a href="{{ .RelPermalink }}">Read More…</a>
+                    {{ end }}
+                </article><br>
+            {{ end }}
         {{ end }}
-        <br>
-        {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-
+    
 
         
 {{ partial "footer.html" . }}

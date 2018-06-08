@@ -45,7 +45,8 @@
     #main-nav a:hover, a:active {
         color: #111;
     }
-  
+    
+
     hr { 
         margin-top: 0px;
         margin-bottom: 40px;
@@ -53,3 +54,8 @@
         margin-right: auto;
         width: 100%;
     } 
+    
+    article {
+        background: lightgray;
+
+    }
