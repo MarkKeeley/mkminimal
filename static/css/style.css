@@ -45,7 +45,6 @@
     #main-nav a:hover, a:active {
         color: #111;
     }
-    
 
     hr { 
         margin-top: 0px;
@@ -56,6 +55,18 @@
     } 
     
     article {
-        background: lightgray;
-
+        background: #f2e9fb;
+        border-radius: 15px;
+        padding: 5px;
+        margin-bottom: 15px;
     }
+    
+    article h1 {
+        color: #111;
+        text-align: center;
+    }
+    
+    
+    
+    
+    /* <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1> */
