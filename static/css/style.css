@@ -1,7 +1,7 @@
  
-* {
+    * {
         box-sizing: border-box; 
-        }
+    }
         
     body {
         background: #fefeff;
@@ -63,7 +63,38 @@
     
     article h1 {
         color: #111;
+        text-shadow: 2px 2px 8px #444;
         text-align: center;
+    }
+    
+    .readmorebutton {
+        border: 2px solid #111;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+        padding: 15px;
+        background: white;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+    }
+    
+    .readmorebutton:hover {
+        background-color: #111;
+        color: white;
+    }
+    
+    a.readmore {
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    
+    a.readmore:hover, a.readmore:active {
+        color: #111;
     }
     
     
