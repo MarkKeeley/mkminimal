@@ -1,6 +1,6 @@
     <footer>
-        Copyright stuff 
-        <a href="{{ .RSSLink }}">RSS<i class="fas fa-rss"></i></a>
+        {{ .Site.Copyright | safeHTML }}
+        <a href="{{ .RSSLink }}"><i class="fas fa-rss"></i>RSS</a>
     </footer>
 </div>
     
