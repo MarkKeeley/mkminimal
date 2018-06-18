@@ -26,8 +26,8 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         padding: 0 0 0 0;
         align-items: center;
         font-size: 1.5rem;
@@ -49,7 +49,7 @@
 
     hr { 
         margin-top: 0px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -68,6 +68,7 @@
         text-align: center;
         margin-top: 1px;
         margin-bottom: 1px;
+        font-size: 1.8rem;
     }
     
     article img {
@@ -109,7 +110,7 @@
     
     footer {
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         color: #444;
     }
     
@@ -117,14 +118,41 @@
         text-align: center;
         margin-top: 0px;
         margin-bottom: 0px;
+        font-size: 1.4rem;
     }
     
     article h3 {
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: #444;
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+    
+    #pagination-section {
+        /*background: red;*/
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    
+    #pagination-section a {
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    
+    #pagination-section a:hover, a:active {
+
+    }
+    
+    .pagination-disabled {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: lightgray;
+        cursor: not-allowed;
     }
     
     

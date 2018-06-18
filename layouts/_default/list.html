@@ -1,8 +1,17 @@
-<!DOCTYPE html>
-<html>
-<body>
-  {{ range .Data.Pages }}
-    <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1>
-  {{ end }}
-</body>
-</html>
+{{ partial "header.html" . }}
+
+<article>
+	<h1>{{ .Title }}</h1>
+		{{ range .Data.Pages.GroupByDate "2006" }}
+  			<h2>{{ .Key }}</h2>
+  			<ul>
+ 			 {{ range .Pages }}
+				{{ .Render "li" }} 
+ 			 {{ end }}
+			  </ul>
+ 		{{ end }}
+
+
+</article>
+<br><br>
+{{ partial "footer.html" . }}
