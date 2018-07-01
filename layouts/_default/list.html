@@ -4,7 +4,7 @@
 	<h1>{{ .Title }}</h1>
 		{{ range .Data.Pages.GroupByDate "2006" }}
   			<h2>{{ .Key }}</h2>
-  			<ul>
+  			<ul class="article-list">
  			 {{ range .Pages }}
 				{{ .Render "li" }} 
  			 {{ end }}
@@ -13,5 +13,5 @@
 
 
 </article>
-<br><br>
+
 {{ partial "footer.html" . }}

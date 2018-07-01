@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <article>
   <h1>{{ .Title }}</h1>
-  <ul>
+  <ul class="article-list">
   {{ $data := .Data }}
   {{ range $key, $value := .Data.Terms.ByCount }}
     <li>

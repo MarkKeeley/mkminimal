@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ .Title }}</title>
-</head>
-<body>
-  <h1>{{ .Title }}</h1>
+{{ partial "header.html" . }}
+
+<article>
+<h1>{{ .Title }}</h1>
   {{ .Content }}
-</body>
-</html>
+</article>
+
+{{ partial "footer.html" . }}

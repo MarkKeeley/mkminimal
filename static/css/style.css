@@ -155,5 +155,11 @@
         cursor: not-allowed;
     }
     
+    .article-list {
+        font-size: 1.1rem;
+
+    }
     
-    /* <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1> */
+    .article-list li {
+        margin-bottom: 10px;
+    }
