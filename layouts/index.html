@@ -14,15 +14,15 @@
         
         <div id="pagination-section">
         {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}"><i class="fas fa-arrow-left"></i> Newer Posts</a>
+            <a href="{{ $paginator.Prev.URL }}">Newer Posts</a>
         {{ else }}
-            <span class="pagination-disabled"><i class="fas fa-arrow-left"></i> Newer Posts</span>
+            <span class="pagination-disabled">Newer Posts</span>
         {{ end }}
         <span>&nbsp;{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}&nbsp;</span>
         {{ if $paginator.HasNext }}
-            <a href="{{ $paginator.Next.URL }}">Older Posts <i class="fas fa-arrow-right"></i></a>
+            <a href="{{ $paginator.Next.URL }}">Older Posts</a>
         {{ else }}
-            <span class="pagination-disabled">Older Posts <i class="fas fa-arrow-right"></i></span>
+            <span class="pagination-disabled">Older Posts</span>
         {{ end }}
         </div>
         
