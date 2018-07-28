@@ -161,3 +161,8 @@
     .article-list li {
         margin-bottom: 5px;
     }
+    
+    blockquote {
+        background-color: lightgray;
+        display: block;
+    }
