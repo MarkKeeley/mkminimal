@@ -56,15 +56,15 @@
     } 
     
     article {
-        background: #f9fafc;
-        border-radius: 15px;
+        /*background: #f9fafc;*/
+        /*border-radius: 15px;*/
         padding: 5px;
         margin-bottom: 15px;
     }
     
     article h1 {
         color: #111;
-        text-shadow: 2px 2px 8px #444;
+        text-shadow: 1px 1px 3px #444;
         text-align: center;
         margin-top: 1px;
         margin-bottom: 1px;
