@@ -106,8 +106,6 @@
     a.readmore {
         font-weight: bold;
         font-size: 1.3rem;
-        /*display: block;*/
-        /*text-decoration: none;*/
     }
     
     a.readmore:hover, a.readmore:active {
@@ -145,11 +143,6 @@
         font-size: 0.8rem;
     }
     
-    /*#pagination-section a {
-        font-weight: bold;
-        font-size: 1.4rem;
-    }*/
-    
     #pagination-section a {
         font-weight: bold;
         font-size: 1.4rem;
@@ -170,13 +163,6 @@
         color: white;
     }
     
-    /*.pagination-disabled {
-        font-weight: bold;
-        font-size: 1.4rem;
-        color: lightgray;
-        cursor: not-allowed;
-    }*/
-    
     .pagination-disabled {
         font-weight: bold;
         font-size: 1.4rem;
@@ -188,7 +174,7 @@
         padding: 10px;
         background: white;
         cursor: not-allowed;
-        opacity: 0.05;
+        opacity: 0.1;
     }
     
     .article-list {
@@ -210,6 +196,9 @@
         #main-nav {
             font-size: 1.4rem;
         }
+        #pagination-section {
+        flex-direction: column;
+    }
         
     }
     
