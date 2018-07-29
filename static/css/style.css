@@ -193,6 +193,20 @@
         display: block;
     }
     
+    #related-content h3 {
+        color: #111;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    #related-content ul {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    #related-content li {
+        margin-bottom: 5px;
+    }
     
     @media screen and (max-width: 360px) {
         #main-nav {
