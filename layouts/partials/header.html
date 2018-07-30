@@ -7,10 +7,8 @@
     {{.Hugo.Generator}}
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.png" type="image/png" />
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .Site.RSSLink }}">
-    <!-- <link rel="stylesheet" href="/css/normalize.css" media="all" /> -->
     {{- $normalize := resources.Get "css/normalize.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $normalize.Permalink }}" integrity="{{ $normalize.Data.Integrity }}" media="screen">
-    <!-- <link rel="stylesheet" href="/css/style.css" media="all" /> -->
     {{- $stylesheet := resources.Get "css/style.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $stylesheet.Permalink }}" integrity="{{ $stylesheet.Data.Integrity }}" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
