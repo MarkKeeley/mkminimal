@@ -5,7 +5,7 @@
                     {{ partial "articleinfo.html" . }}
                     {{ .Summary }}
                     {{ if .Truncated }}
-                        <a href="{{ .RelPermalink }}" class="readmorebutton" title="Click here to read the rest of this article">Read More</a><br><br>
+                        <br><a href="{{ .RelPermalink }}" class="readmorebutton" title="Click here to read the rest of this article">Read More</a><br><br>
                     {{ end }}
                     <hr class="hr-dotted">
                 </article>
