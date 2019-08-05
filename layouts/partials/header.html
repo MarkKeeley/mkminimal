@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
     {{hugo.Generator}}
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.png" type="image/png" />
@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="PageContainer">
-        <ul id="main-nav" role="navigation">
+        <ul id="main-nav">
                 <li id="nav-home"><a href="/" title="Return to main page"><i class="fas fa-home"></i>Home</a></li>
         
                 <li><a href="/posts/" title="See a full list of posts for this site"><i class="fas fa-list-ul"></i>Posts &nbsp;</a></li>
