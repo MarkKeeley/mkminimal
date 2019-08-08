@@ -5,7 +5,8 @@
                     {{ partial "articleinfo.html" . }}
                     {{ .Summary }}
                     {{ if .Truncated }}
-                        <br><a href="{{ .RelPermalink }}" class="readmorebutton" title="Click here to read the rest of this article">Read More</a><br><br>
+                        <div class="readmorediv"><a href="{{ .RelPermalink }}" class="readmorebutton" title="Click here to read the rest of this article">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     {{ end }}
                     <hr class="hr-dotted">
                 </article>
@@ -14,15 +15,15 @@
         
         <div id="pagination-section">
         {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}">Newer Posts</a>
+            <a href="{{ $paginator.Prev.URL }}"><i class="fas fa-arrow-left"></i> Newer Posts</a>
         {{ else }}
-            <span class="pagination-disabled">Newer Posts</span>
+            <span class="pagination-disabled"><i class="fas fa-arrow-left"></i> Newer Posts</span>
         {{ end }}
         <span>&nbsp;{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}&nbsp;</span>
         {{ if $paginator.HasNext }}
-            <a href="{{ $paginator.Next.URL }}">Older Posts</a>
+            <a href="{{ $paginator.Next.URL }}">Older Posts <i class="fas fa-arrow-right"></i></a>
         {{ else }}
-            <span class="pagination-disabled">Older Posts</span>
+            <span class="pagination-disabled">Older Posts <i class="fas fa-arrow-right"></i></span>
         {{ end }}
         </div>
         

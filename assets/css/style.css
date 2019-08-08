@@ -95,34 +95,34 @@
         margin: 0 auto;
     }
     
+    .readmorediv {
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     .readmorebutton {
         border: 2px solid #444;
-        border-radius: 20px;
+        border-radius: 0px;
         text-decoration: none;
         text-align: center;
         font-size: 1.2rem;
         font-weight: bold;
         color: #444;
-        padding: 10px;
+        padding: 6px;
         background: #ffffff;
         transition-duration: 0.4s;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 5px 6px 0 rgba(0,0,0,0.19);
         cursor: pointer;
-    }
+    } 
     
     .readmorebutton:hover {
-        background-color: #111;
+        opacity: 1;
         border: 2px solid #111;
-        color: #ffffff;
-    }
-    
-    a.readmore {
-        font-weight: bold;
-        font-size: 1.3rem;
-    }
-    
-    a.readmore:hover, a.readmore:active {
-        color: #111;
+        font-weight: 990;
+        background: rgb(248, 248, 248);
+        text-decoration: underline;
     }
     
     footer {
@@ -147,7 +147,6 @@
     }
     
     #pagination-section {
-        /*background: red;*/
         margin-top: 10px;
         margin-bottom: 20px;
         display: flex;
@@ -156,15 +155,15 @@
         flex-wrap: wrap;
         font-size: 0.8rem;
     }
-    
+
     #pagination-section a {
         font-weight: bold;
         font-size: 1.4rem;
-        border: 2px solid #111;
-        border-radius: 20px;
+        border: 2px solid #444;
+        border-radius: 0px;
         text-decoration: none;
         text-align: center;
-        color: #111;
+        color: #1a71b1;
         padding: 10px;
         background: #ffffff;
         transition-duration: 0.4s;
@@ -172,16 +171,21 @@
         cursor: pointer;
     }
     
-    #pagination-section a:hover, a:active {
-        background-color: #111;
-        color: white;
+    #pagination-section a:hover {
+        background: rgb(248, 248, 248);
+        border: 2px solid #111;
+        text-decoration: underline;
     }
     
+    #pagination-section a:visited {
+        color: darkblue;
+    }
+
     .pagination-disabled {
         font-weight: bold;
         font-size: 1.4rem;
         border: 2px solid #111;
-        border-radius: 20px;
+        border-radius: 0px;
         text-decoration: none;
         text-align: center;
         color: #111;
