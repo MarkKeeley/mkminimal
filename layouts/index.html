@@ -2,6 +2,7 @@
         {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
         {{ range $paginator.Pages }}
                 <article>
+                    <h1><a href="{{ .RelPermalink }}" class="article-title">{{ .Title }}</a></h1>
                     {{ partial "articleinfo.html" . }}
                     {{ .Summary }}
                     {{ if .Truncated }}

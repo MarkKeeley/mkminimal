@@ -94,6 +94,22 @@
         display: block;
         margin: 0 auto;
     }
+
+    .article-title {
+        color: #1a71b1;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 1px;
+        font-size: 1.8rem;
+        font-family: "Helvetica", Arial, sans-serif;
+        text-decoration: none;
+        /*text-shadow: none;*/
+    }
+
+    .article-title:hover {
+        text-decoration: underline;
+        opacity: 1;
+    }
     
     .readmorediv {
         text-align: center;
