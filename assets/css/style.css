@@ -66,6 +66,18 @@
         /*background: #f9fafc;*/
     }
     
+    article a {
+        color: #1a71b1;
+    }
+    
+    article a:visited {
+        color: darkblue;
+    }
+    
+    article a:hover {
+        opacity: .6;
+    }
+    
     article h1 {
         color: #111;
         text-shadow: 1px 1px 3px #444;

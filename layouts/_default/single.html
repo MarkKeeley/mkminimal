@@ -3,14 +3,14 @@
 <article>
     {{ partial "articleinfo.html" . }}
     {{ .Content }}
-</article>
+
 
 {{ $related := .Site.RegularPages.Related . | first 7 }}
 {{ with $related }}
     <div id="related-content">
         <hr class="hr-dotted">
         <hr class="hr-dotted">
-        <h3>See Also</h3>
+        <h1>See Also</h1>
         <ul>
             {{ range . }}
             <li><a href="{{ .RelPermalink }}" title="{{ .Description }}">{{ .Title }}</a></li>
@@ -18,4 +18,5 @@
         </ul>
     </div>
 {{ end }}
+</article>
 {{ partial "footer.html" . }}
