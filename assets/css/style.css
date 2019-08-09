@@ -45,7 +45,8 @@
     }
     
     #main-nav a:hover, a:active {
-        color: #111;
+        /*color: #111;*/
+        color: #1a71b1;
     }
 
     hr { 
