@@ -81,7 +81,6 @@
     
     article h1 {
         color: #111;
-        text-shadow: 1px 1px 3px #444;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 1px;
@@ -104,7 +103,7 @@
         font-size: 1.8rem;
         font-family: "Helvetica", Arial, sans-serif;
         text-decoration: none;
-        text-shadow: 1px 1px 3px rgb(143, 143, 143);
+        text-shadow: none;
     }
 
     .article-title:hover {

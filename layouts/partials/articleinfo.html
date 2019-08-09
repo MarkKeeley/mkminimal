@@ -1,5 +1,5 @@
                     <h2>{{ .Description }}</h2>
-                    <h3>{{ .PublishDate.Format "January 2, 2006" }}</h3>
+                    <h3><i class="fas fa-calendar-alt"></i> {{ .PublishDate.Format "January 2, 2006" }}</h3>
                     {{ $baseUrl := .Site.BaseURL }}
                     {{ if isset .Params "tags" }}
                         {{ $count := len .Params.tags }}
