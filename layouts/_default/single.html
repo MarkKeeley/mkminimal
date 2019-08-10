@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <article>
-    <h1>{{ .Title }}</h1>
+    <h1 class="article-title">{{ .Title }}</h1>
     {{ partial "articleinfo.html" . }}
     {{ .Content }}
 
@@ -11,7 +11,7 @@
     <div id="related-content">
         <hr class="hr-dotted">
         <hr class="hr-dotted">
-        <h1>See Also</h1>
+        <h1 class="article-title">See Also</h1>
         <ul>
             {{ range . }}
             <li><a href="{{ .RelPermalink }}" title="{{ .Description }}">{{ .Title }}</a></li>

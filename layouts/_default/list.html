@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
 
 <article>
-	<h1>{{ .Title }}</h1>
+	<h2 style="text-align: center">{{ .Title }}</h2>
 		{{ range .Data.Pages.GroupByDate "2006" }}
-  			<h2>{{ .Key }}</h2>
+  			<h2 style="text-align: center">{{ .Key }}</h2>
   			<ul class="article-list">
  			 {{ range .Pages }}
 				{{ .Render "li" }} 
