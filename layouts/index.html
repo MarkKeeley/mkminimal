@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
-        {{ range $paginator.Pages }}
+        
+        {{ range .Paginator.Pages }}
                 <article>
                     <h1 class="article-title"><a href="{{ .RelPermalink }}" class="index-title">{{ .Title }}</a></h1>
                     {{ partial "articleinfo.html" . }}
@@ -15,6 +15,7 @@
     
         
         <div id="pagination-section">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
         {{ if $paginator.HasPrev }}
             <a href="{{ $paginator.Prev.URL }}"><i class="fas fa-arrow-left"></i> Newer Posts</a>
         {{ else }}
